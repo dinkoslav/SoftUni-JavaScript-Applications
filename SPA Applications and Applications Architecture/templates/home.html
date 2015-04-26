@@ -1,0 +1,9 @@
+<a href="#/add-book">Add book</a>
+{{#results}}
+    <h2>Title: {{title}}</h2>
+    <p>Author: {{author}}</p>
+    <p>ISBN: {{isbn}}</p>
+        <a href="#/edit-book/{{objectId}}">Edit</a>
+        <a href="#/" id="deleteBook" data-id="{{objectId}}">Delete</a>
+    <br/>
+{{/results}}
