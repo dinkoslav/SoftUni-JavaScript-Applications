@@ -1,0 +1,18 @@
+<!-- posts page -->
+{{#results}}
+<article class="post well">
+    <header class="post-header">
+        <div class="post-image">
+            <img class="mini-thumbnail" src="{{createdBy.picture}}"/>
+        </div>
+        <div class="post-info">
+            <p><a href="#/" id="post-owner" class="profile-link" data-user-id="{{createdBy.objectId}}">{{createdBy.name}}</a> made a post</p>
+            <p>on <time>{{createdAt}}</time></p>
+        </div>
+    </header>
+    <section class="post-content">
+        <p>{{content}}</p>
+    </section>
+</article>
+{{/results}}
+<!-- end of posts page -->
